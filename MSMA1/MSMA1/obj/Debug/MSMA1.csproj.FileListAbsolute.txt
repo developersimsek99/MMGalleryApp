@@ -1,0 +1,10 @@
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csprojAssemblyReference.cache
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Form1.resources
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Properties.Resources.resources
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.GenerateResource.cache
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.CoreCompileInputs.cache
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\bin\Debug\MSMA1.exe.config
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\bin\Debug\MSMA1.exe
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\bin\Debug\MSMA1.pdb
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.exe
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.pdb

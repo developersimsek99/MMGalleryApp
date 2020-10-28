@@ -16,5 +16,16 @@ namespace MSMA1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //ArabaDal arabaDal = new ArabaDal();
+            //arabaDgw.DataSource = arabaDal.Listele();
+        }
     }
 }
