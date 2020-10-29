@@ -27,5 +27,10 @@ namespace MSMA1
             ArabaDalCls arabaDalMA = new ArabaDalCls();
             arabaDgw.DataSource = arabaDalMA.Listeleme();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
