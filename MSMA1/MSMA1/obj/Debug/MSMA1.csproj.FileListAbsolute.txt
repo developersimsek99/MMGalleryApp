@@ -8,3 +8,8 @@ C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\bin\Debug\MSMA1.exe
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\bin\Debug\MSMA1.pdb
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.exe
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.pdb
+C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.dll
+C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.xml
+C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.CopyComplete
