@@ -51,7 +51,7 @@ warning 6002: The table/view 'DbGaleriMA.dbo.ArbalarMA' does not have a primary 
           <Property Name="Fiyat" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="DbGaleriMAEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbGaleriMAEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ArbalarMA" EntityType="Self.ArbalarMA" />
         </EntityContainer>
       </Schema>
@@ -59,7 +59,7 @@ warning 6002: The table/view 'DbGaleriMA.dbo.ArbalarMA' does not have a primary 
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbGaleriMAModelStoreContainer" CdmEntityContainer="DbGaleriMAEntities">
+        <EntityContainerMapping StorageEntityContainer="DbGaleriMAModelStoreContainer" CdmEntityContainer="DbGaleriMAEntities1">
           <EntitySetMapping Name="ArbalarMA">
             <EntityTypeMapping TypeName="DbGaleriMAModel.ArbalarMA">
               <MappingFragment StoreEntitySet="ArbalarMA">

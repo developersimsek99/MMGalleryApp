@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbGaleriMAModelStoreContainer" CdmEntityContainer="DbGaleriMAEntities1">
+    <EntitySetMapping Name="ArbalarMA">
+      <EntityTypeMapping TypeName="DbGaleriMAModel.ArbalarMA">
+        <MappingFragment StoreEntitySet="ArbalarMA">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

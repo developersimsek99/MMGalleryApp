@@ -13,10 +13,10 @@ namespace MSMA1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbGaleriMAEntities : DbContext
+    public partial class DbGaleriMAEntities1 : DbContext
     {
-        public DbGaleriMAEntities()
-            : base("name=DbGaleriMAEntities")
+        public DbGaleriMAEntities1()
+            : base("name=DbGaleriMAEntities1")
         {
         }
     

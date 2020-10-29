@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ac30a0430e0b419cae66f4829eb3d2fe" Name="Diagram1">
+      <Diagram DiagramId="d8d4e86729e54a9eacb686df97071978" Name="Diagram1">
         <EntityTypeShape EntityType="DbGaleriMAModel.ArbalarMA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
