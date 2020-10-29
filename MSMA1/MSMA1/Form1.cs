@@ -24,8 +24,8 @@ namespace MSMA1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //ArabaDal arabaDal = new ArabaDal();
-            //arabaDgw.DataSource = arabaDal.Listele();
+            ArabaDalCls arabaDalMA = new ArabaDalCls();
+            arabaDgw.DataSource = arabaDalMA.Listeleme();
         }
     }
 }
