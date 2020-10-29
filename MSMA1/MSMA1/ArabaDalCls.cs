@@ -14,9 +14,9 @@ namespace MSMA1
         string linkAdressi;
         public DataTable Listeleme()
         {
-            StreamReader streamReader = new StreamReader(@"C:\Users\Murat\source\repos\developersimsek99\OrtakProje\linkAddress.txt");
+            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
             string satir = streamReader.ReadLine();
-            while (satir!=null)
+            while (satir != null)
             {
                 linkAdressi = satir;
                 satir = streamReader.ReadLine();

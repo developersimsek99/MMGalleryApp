@@ -1,2 +1,2 @@
-Data Source=DESKTOP-C4FIS0N\SQLEXPRESS; initial catalog=DbGaleriMA; integrated security=true;
 Data Source=(localdb)\mssqllocaldb; initial catalog=DbGaleriMS; integrated security=true;
+Data Source=DESKTOP-C4FIS0N\SQLEXPRESS; initial catalog=DbGaleriMS; integrated security=true;
