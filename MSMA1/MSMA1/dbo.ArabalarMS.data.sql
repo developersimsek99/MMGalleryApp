@@ -1,0 +1,8 @@
+SET IDENTITY_INSERT [dbo].[ArabalarMS] ON
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (1, N'opel                                              ', N'zafira                                            ', CAST(700000.0000 AS Money), N'gashsv                                            ')
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (2, N'honda                                             ', N'swich                                             ', CAST(800000.0000 AS Money), N'sbahsb                                            ')
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (3, N'Hyundai                                           ', N'i20                                               ', CAST(115000.0000 AS Money), N'Sıfıra yakın                                      ')
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (1, N'Opel                                              ', N'Zafira                                            ', CAST(70000.0000 AS Money), N'Eski aracim                                       ')
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (2, N'Honda                                             ', N'Civic                                             ', CAST(50000.0000 AS Money), N'Temiz Honda                                       ')
+INSERT INTO [dbo].[ArabalarMS] ([Id], [Marka], [Model], [Fiyat], [Aciklama]) VALUES (1002, N'Hyundai                                           ', N'i20                                               ', CAST(115000.0000 AS Money), N'Sifira yakin                                      ')
+SET IDENTITY_INSERT [dbo].[ArabalarMS] OFF
