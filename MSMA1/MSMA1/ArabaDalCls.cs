@@ -34,5 +34,27 @@ namespace MSMA1
             connection.Close();
             return dataTable;
         }
+        public void Ekle(ArabaCls arabaCls)
+        {
+            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
+            string satir = streamReader.ReadLine();
+            while (satir != null)
+            {
+                linkAdressi = satir;
+                satir = streamReader.ReadLine();
+            }
+            SqlConnection connection = new SqlConnection(linkAdressi);
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+            SqlCommand command = new SqlCommand("Insert into ArabalarMS values (@marka,@model,@fiyat,@aciklama)",connection);
+            command.Parameters.AddWithValue("@marka",arabaCls.Marka);
+            command.Parameters.AddWithValue("@model",arabaCls.Model);
+            command.Parameters.AddWithValue("@fiyat", arabaCls.Fiyat);
+            command.Parameters.AddWithValue("@aciklama", arabaCls.Aciklama);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }

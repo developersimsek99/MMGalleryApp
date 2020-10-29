@@ -24,13 +24,26 @@ namespace MSMA1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ArabaDalCls arabaDalMA = new ArabaDalCls();
-            arabaDgw.DataSource = arabaDalMA.Listeleme();
+            ArabaDalCls arabaDalcls = new ArabaDalCls();
+            arabaDgw.DataSource = arabaDalcls.Listeleme();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            ArabaDalCls arabaDalCls = new ArabaDalCls();
+            arabaDalCls.Ekle(new ArabaCls {
+                Marka = tbxMarka.Text,
+                Model = tbxModel.Text,
+                Fiyat = Convert.ToDecimal(tbxFiyat.Text),
+                Aciklama = tbxAciklama.Text
+            });
+            arabaDgw.DataSource = arabaDalCls.Listeleme();
+            MessageBox.Show("Araç Kaydı Eklendi");
         }
     }
 }
