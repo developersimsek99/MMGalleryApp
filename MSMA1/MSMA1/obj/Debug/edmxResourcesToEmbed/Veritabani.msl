@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DbGaleriMAModelStoreContainer" CdmEntityContainer="DbGaleriMAEntities1">
     <EntitySetMapping Name="ArbalarMA">
-      <EntityTypeMapping TypeName="DbGaleriMAModel.ArbalarMA">
+      <EntityTypeMapping TypeName="DbGaleriMAModel.ArabalarMS">
         <MappingFragment StoreEntitySet="ArbalarMA">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Marka" ColumnName="Marka" />

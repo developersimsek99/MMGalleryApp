@@ -37,7 +37,7 @@ warning 6002: The table/view 'DbGaleriMA.dbo.ArbalarMA' does not have a primary 
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbGaleriMAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="ArbalarMA">
+        <EntityType Name="ArabalarMS">
           <Key>
             <PropertyRef Name="Id" />
             <PropertyRef Name="Marka" />
@@ -52,7 +52,7 @@ warning 6002: The table/view 'DbGaleriMA.dbo.ArbalarMA' does not have a primary 
           <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="DbGaleriMAEntities1" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="ArbalarMA" EntityType="Self.ArbalarMA" />
+          <EntitySet Name="ArbalarMA" EntityType="DbGaleriMAModel.ArabalarMS" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -61,7 +61,7 @@ warning 6002: The table/view 'DbGaleriMA.dbo.ArbalarMA' does not have a primary 
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DbGaleriMAModelStoreContainer" CdmEntityContainer="DbGaleriMAEntities1">
           <EntitySetMapping Name="ArbalarMA">
-            <EntityTypeMapping TypeName="DbGaleriMAModel.ArbalarMA">
+            <EntityTypeMapping TypeName="DbGaleriMAModel.ArabalarMS">
               <MappingFragment StoreEntitySet="ArbalarMA">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Marka" ColumnName="Marka" />
