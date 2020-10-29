@@ -5,19 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace MSMA1
 {
     class ArabaDalCls
     {
+        string linkAdressi;
         public DataTable Listeleme()
         {
-            SqlConnection connection = new SqlConnection(@"server=DESKTOP-C4FIS0N\SQLEXPRESS; initial catalog=DbGaleriMA; integrated security=true;");
+            StreamReader streamReader = new StreamReader(@"C:\Users\DEVELOPER\source\repos\OrtakProje\linkAddress.txt");
+            string satir = streamReader.ReadLine();
+            while (satir!=null)
+            {
+                linkAdressi = satir;
+                satir = streamReader.ReadLine();
+            }
+            SqlConnection connection = new SqlConnection(linkAdressi);
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
             }
-            SqlCommand command = new SqlCommand("Select * from ArabalarMA", connection);
+            SqlCommand command = new SqlCommand("Select * from ArabalarMS", connection);
             SqlDataReader reader = command.ExecuteReader();
             DataTable dataTable = new DataTable();
             dataTable.Load(reader);
