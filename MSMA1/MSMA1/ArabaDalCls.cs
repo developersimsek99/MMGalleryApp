@@ -26,7 +26,7 @@ namespace MSMA1
             {
                 connection.Open();
             }
-            SqlCommand command = new SqlCommand("Select * from ArabalarMS", connection);
+            SqlCommand command = new SqlCommand("Select * from ArabalarMA", connection);
             SqlDataReader reader = command.ExecuteReader();
             DataTable dataTable = new DataTable();
             dataTable.Load(reader);
