@@ -48,7 +48,7 @@ namespace MSMA1
             {
                 connection.Open();
             }
-            SqlCommand command = new SqlCommand("Insert into ArabalarMS values (@marka,@model,@fiyat,@aciklama)",connection);
+            SqlCommand command = new SqlCommand("Insert into ArabalarMA values (@marka,@model,@fiyat,@aciklama)",connection);
             command.Parameters.AddWithValue("@marka",arabaCls.Marka);
             command.Parameters.AddWithValue("@model",arabaCls.Model);
             command.Parameters.AddWithValue("@fiyat", arabaCls.Fiyat);
