@@ -56,5 +56,47 @@ namespace MSMA1
             command.ExecuteNonQuery();
             connection.Close();
         }
+        public void Update(ArabaCls arabaCls)
+        {
+            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
+            string satir = streamReader.ReadLine();
+            while (satir != null)
+            {
+                linkAdressi = satir;
+                satir = streamReader.ReadLine();
+            }
+            SqlConnection connection = new SqlConnection(linkAdressi);
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+            SqlCommand command = new SqlCommand("Update ArabalarMA set Marka=@marka,Model=@model,Fiyat=@fiyat,Aciklama=@aciklama where Id=@id",connection);
+            command.Parameters.AddWithValue("@marka", arabaCls.Marka);
+            command.Parameters.AddWithValue("@model", arabaCls.Model);
+            command.Parameters.AddWithValue("@fiyat", arabaCls.Fiyat);
+            command.Parameters.AddWithValue("@aciklama", arabaCls.Aciklama);
+            command.Parameters.AddWithValue("@id",arabaCls.Id);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+        public void Delete(int id)
+        {
+            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
+            string satir = streamReader.ReadLine();
+            while (satir != null)
+            {
+                linkAdressi = satir;
+                satir = streamReader.ReadLine();
+            }
+            SqlConnection connection = new SqlConnection(linkAdressi);
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+            SqlCommand command = new SqlCommand("Delete from ArabalarMA where Id=@id",connection);
+            command.Parameters.AddWithValue("@id",id);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }

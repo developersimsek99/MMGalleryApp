@@ -30,7 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.arabaDgw = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbxAciklama = new System.Windows.Forms.TextBox();
@@ -42,14 +42,17 @@
             this.tbxMarka = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblUnlem = new System.Windows.Forms.Label();
+            this.tbxIdUpdate = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbxAciklamaUpdate = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxFiyatUpdate = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxModelUpdate = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbxMarkaUpdate = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.arabaDgw)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -74,16 +77,17 @@
             this.arabaDgw.Name = "arabaDgw";
             this.arabaDgw.Size = new System.Drawing.Size(775, 187);
             this.arabaDgw.TabIndex = 2;
+            this.arabaDgw.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.arabaDgw_CellClick);
             // 
-            // button2
+            // btnRemove
             // 
-            this.button2.Location = new System.Drawing.Point(712, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Sil";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRemove.Location = new System.Drawing.Point(712, 10);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.TabIndex = 4;
+            this.btnRemove.Text = "Aracı Sil";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnEkle
             // 
@@ -108,7 +112,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 233);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 205);
+            this.groupBox1.Size = new System.Drawing.Size(200, 215);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bir Araç Ekleyin";
@@ -180,91 +184,125 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.lblUnlem);
+            this.groupBox2.Controls.Add(this.tbxIdUpdate);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.tbxAciklamaUpdate);
+            this.groupBox2.Controls.Add(this.btnUpdate);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.tbxFiyatUpdate);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.tbxModelUpdate);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.tbxMarkaUpdate);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Location = new System.Drawing.Point(587, 233);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 205);
+            this.groupBox2.Size = new System.Drawing.Size(200, 215);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bir Araç Güncelleyin";
             // 
-            // textBox1
+            // lblUnlem
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 120);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 40);
-            this.textBox1.TabIndex = 13;
+            this.lblUnlem.AutoSize = true;
+            this.lblUnlem.BackColor = System.Drawing.SystemColors.Control;
+            this.lblUnlem.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnlem.ForeColor = System.Drawing.Color.Red;
+            this.lblUnlem.Location = new System.Drawing.Point(154, 20);
+            this.lblUnlem.Name = "lblUnlem";
+            this.lblUnlem.Size = new System.Drawing.Size(12, 17);
+            this.lblUnlem.TabIndex = 16;
+            this.lblUnlem.Text = "!";
+            this.lblUnlem.Visible = false;
             // 
-            // button3
+            // tbxIdUpdate
             // 
-            this.button3.Location = new System.Drawing.Point(47, 166);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.tbxIdUpdate.Location = new System.Drawing.Point(47, 18);
+            this.tbxIdUpdate.Name = "tbxIdUpdate";
+            this.tbxIdUpdate.ReadOnly = true;
+            this.tbxIdUpdate.Size = new System.Drawing.Size(100, 20);
+            this.tbxIdUpdate.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(16, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Id";
+            // 
+            // tbxAciklamaUpdate
+            // 
+            this.tbxAciklamaUpdate.Location = new System.Drawing.Point(9, 140);
+            this.tbxAciklamaUpdate.Multiline = true;
+            this.tbxAciklamaUpdate.Name = "tbxAciklamaUpdate";
+            this.tbxAciklamaUpdate.Size = new System.Drawing.Size(138, 40);
+            this.tbxAciklamaUpdate.TabIndex = 13;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(47, 186);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(100, 23);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "GÜNCELLE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 102);
+            this.label5.Location = new System.Drawing.Point(6, 122);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Açıklama : ";
             // 
-            // textBox2
+            // tbxFiyatUpdate
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 11;
+            this.tbxFiyatUpdate.Location = new System.Drawing.Point(47, 97);
+            this.tbxFiyatUpdate.Name = "tbxFiyatUpdate";
+            this.tbxFiyatUpdate.Size = new System.Drawing.Size(100, 20);
+            this.tbxFiyatUpdate.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 80);
+            this.label6.Location = new System.Drawing.Point(6, 100);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Fiyat";
             // 
-            // textBox3
+            // tbxModelUpdate
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.tbxModelUpdate.Location = new System.Drawing.Point(47, 71);
+            this.tbxModelUpdate.Name = "tbxModelUpdate";
+            this.tbxModelUpdate.Size = new System.Drawing.Size(100, 20);
+            this.tbxModelUpdate.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 54);
+            this.label7.Location = new System.Drawing.Point(6, 74);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Model";
             // 
-            // textBox4
+            // tbxMarkaUpdate
             // 
-            this.textBox4.Location = new System.Drawing.Point(47, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.tbxMarkaUpdate.Location = new System.Drawing.Point(47, 44);
+            this.tbxMarkaUpdate.Name = "tbxMarkaUpdate";
+            this.tbxMarkaUpdate.Size = new System.Drawing.Size(100, 20);
+            this.tbxMarkaUpdate.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 27);
+            this.label8.Location = new System.Drawing.Point(6, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 0;
@@ -274,15 +312,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 473);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.arabaDgw);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
             ((System.ComponentModel.ISupportInitialize)(this.arabaDgw)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -296,7 +335,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView arabaDgw;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox tbxAciklama;
@@ -308,15 +347,18 @@
         private System.Windows.Forms.TextBox tbxMarka;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tbxAciklamaUpdate;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxFiyatUpdate;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxModelUpdate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxMarkaUpdate;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbxIdUpdate;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblUnlem;
     }
 }
 
