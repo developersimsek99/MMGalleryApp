@@ -72,9 +72,6 @@
   <ItemGroup>
     <Compile Include="ArabaCls.cs" />
     <Compile Include="ArabaDalCls.cs" />
-    <Compile Include="ArbalarMA.cs">
-      <DependentUpon>Veritabani.tt</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,21 +80,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Veritabani.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Veritabani.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Veritabani.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Veritabani.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Veritabani.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Veritabani.edmx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,13 +102,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="Veritabani.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Veritabani.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Veritabani.edmx.diagram">
-      <DependentUpon>Veritabani.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -141,16 +116,6 @@
     <Content Include="App_Data\Database1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-    <Content Include="Veritabani.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Veritabani.edmx</DependentUpon>
-      <LastGenOutput>Veritabani.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Veritabani.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Veritabani.edmx</DependentUpon>
-      <LastGenOutput>Veritabani.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
