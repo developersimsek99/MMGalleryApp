@@ -79,3 +79,5 @@ C:\Users\Murat\Source\Repos\developersimsek99\MSMA1\MSMA1\obj\Debug\MSMA1.csproj
 C:\Users\Murat\Source\Repos\developersimsek99\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.CopyComplete
 C:\Users\Murat\Source\Repos\developersimsek99\MSMA1\MSMA1\obj\Debug\MSMA1.exe
 C:\Users\Murat\Source\Repos\developersimsek99\MSMA1\MSMA1\obj\Debug\MSMA1.pdb
+C:\Users\DEVELOPER\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\App_Data\Database1.mdf
+C:\Users\DEVELOPER\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\App_Data\Database1_log.ldf
