@@ -12,7 +12,7 @@ namespace MSMA1
     class ArabaDalCls
     {
         string linkAdressi;
-        public DataTable Listeleme()
+        private SqlConnection Baglanti()
         {
             StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
             string satir = streamReader.ReadLine();
@@ -26,6 +26,13 @@ namespace MSMA1
             {
                 connection.Open();
             }
+
+            return connection;
+        }
+
+        public DataTable Listeleme()
+        {
+            SqlConnection connection = Baglanti();
             SqlCommand command = new SqlCommand("Select * from ArabalarMA", connection);
             SqlDataReader reader = command.ExecuteReader();
             DataTable dataTable = new DataTable();
@@ -34,20 +41,10 @@ namespace MSMA1
             connection.Close();
             return dataTable;
         }
+
         public void Ekle(ArabaCls arabaCls)
         {
-            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
-            string satir = streamReader.ReadLine();
-            while (satir != null)
-            {
-                linkAdressi = satir;
-                satir = streamReader.ReadLine();
-            }
-            SqlConnection connection = new SqlConnection(linkAdressi);
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
+            SqlConnection connection = Baglanti();
             SqlCommand command = new SqlCommand("Insert into ArabalarMA values (@marka,@model,@fiyat,@aciklama)",connection);
             command.Parameters.AddWithValue("@marka",arabaCls.Marka);
             command.Parameters.AddWithValue("@model",arabaCls.Model);
@@ -58,18 +55,7 @@ namespace MSMA1
         }
         public void Update(ArabaCls arabaCls)
         {
-            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
-            string satir = streamReader.ReadLine();
-            while (satir != null)
-            {
-                linkAdressi = satir;
-                satir = streamReader.ReadLine();
-            }
-            SqlConnection connection = new SqlConnection(linkAdressi);
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
+            SqlConnection connection = Baglanti();
             SqlCommand command = new SqlCommand("Update ArabalarMA set Marka=@marka,Model=@model,Fiyat=@fiyat,Aciklama=@aciklama where Id=@id",connection);
             command.Parameters.AddWithValue("@marka", arabaCls.Marka);
             command.Parameters.AddWithValue("@model", arabaCls.Model);
@@ -81,18 +67,7 @@ namespace MSMA1
         }
         public void Delete(int id)
         {
-            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
-            string satir = streamReader.ReadLine();
-            while (satir != null)
-            {
-                linkAdressi = satir;
-                satir = streamReader.ReadLine();
-            }
-            SqlConnection connection = new SqlConnection(linkAdressi);
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
+            SqlConnection connection = Baglanti();
             SqlCommand command = new SqlCommand("Delete from ArabalarMA where Id=@id",connection);
             command.Parameters.AddWithValue("@id",id);
             command.ExecuteNonQuery();
