@@ -54,6 +54,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbxMarkaUpdate = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.arabaDgw)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -207,11 +208,11 @@
             // 
             this.lblUnlem.AutoSize = true;
             this.lblUnlem.BackColor = System.Drawing.SystemColors.Control;
-            this.lblUnlem.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnlem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnlem.ForeColor = System.Drawing.Color.Red;
             this.lblUnlem.Location = new System.Drawing.Point(154, 20);
             this.lblUnlem.Name = "lblUnlem";
-            this.lblUnlem.Size = new System.Drawing.Size(12, 17);
+            this.lblUnlem.Size = new System.Drawing.Size(12, 16);
             this.lblUnlem.TabIndex = 16;
             this.lblUnlem.Text = "!";
             this.lblUnlem.Visible = false;
@@ -308,11 +309,23 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Marka";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(311, 249);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 9;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 473);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRemove);
@@ -328,6 +341,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -359,6 +373,7 @@
         private System.Windows.Forms.TextBox tbxIdUpdate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblUnlem;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
