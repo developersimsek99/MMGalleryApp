@@ -207,11 +207,11 @@
             // 
             this.lblUnlem.AutoSize = true;
             this.lblUnlem.BackColor = System.Drawing.SystemColors.Control;
-            this.lblUnlem.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnlem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnlem.ForeColor = System.Drawing.Color.Red;
             this.lblUnlem.Location = new System.Drawing.Point(154, 20);
             this.lblUnlem.Name = "lblUnlem";
-            this.lblUnlem.Size = new System.Drawing.Size(12, 17);
+            this.lblUnlem.Size = new System.Drawing.Size(12, 16);
             this.lblUnlem.TabIndex = 16;
             this.lblUnlem.Text = "!";
             this.lblUnlem.Visible = false;
@@ -321,7 +321,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.arabaDgw)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

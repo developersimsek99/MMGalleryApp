@@ -83,7 +83,8 @@ namespace MSMA1
             tbxAciklamaUpdate.Text = arabaDgw.CurrentRow.Cells[4].Value.ToString();
         }
 
-        private void Form1_MouseEnter(object sender, EventArgs e)
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
             tbxIdUpdate.Clear();
             tbxMarkaUpdate.Clear();
