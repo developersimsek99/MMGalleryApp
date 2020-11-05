@@ -208,11 +208,11 @@
             // 
             this.lblUnlem.AutoSize = true;
             this.lblUnlem.BackColor = System.Drawing.SystemColors.Control;
-            this.lblUnlem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnlem.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnlem.ForeColor = System.Drawing.Color.Red;
             this.lblUnlem.Location = new System.Drawing.Point(154, 20);
             this.lblUnlem.Name = "lblUnlem";
-            this.lblUnlem.Size = new System.Drawing.Size(12, 16);
+            this.lblUnlem.Size = new System.Drawing.Size(12, 17);
             this.lblUnlem.TabIndex = 16;
             this.lblUnlem.Text = "!";
             this.lblUnlem.Visible = false;
@@ -312,7 +312,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(311, 249);
+            this.radioButton1.Location = new System.Drawing.Point(230, 17);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(85, 17);
             this.radioButton1.TabIndex = 9;
