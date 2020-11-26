@@ -1,4 +1,3 @@
-C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csprojAssemblyReference.cache
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Form1.resources
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Properties.Resources.resources
 C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.GenerateResource.cache
@@ -98,3 +97,4 @@ C:\Users\DEVELOPER\Source\Repos\Anka42\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.cs
 C:\Users\DEVELOPER\Source\Repos\Anka42\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.CopyComplete
 C:\Users\DEVELOPER\Source\Repos\Anka42\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.exe
 C:\Users\DEVELOPER\Source\Repos\Anka42\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.pdb
+C:\Users\DEVELOPER\source\repos\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csprojAssemblyReference.cache

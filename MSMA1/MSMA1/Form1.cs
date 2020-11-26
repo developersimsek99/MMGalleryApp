@@ -38,12 +38,6 @@ namespace MSMA1
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            if (tbxFiyat.Text == Convert.ToString(tbxFiyat.Text))
-            {
-                tbxFiyat.Clear();
-                MessageBox.Show("Yanlış veri tipi girildi!");
-
-            }
             ArabaDalCls arabaDalCls = new ArabaDalCls();
             arabaDalCls.Ekle(new ArabaCls {
                 Marka = tbxMarka.Text,
