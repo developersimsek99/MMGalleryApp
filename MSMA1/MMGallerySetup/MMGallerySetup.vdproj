@@ -362,7 +362,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MMGallerySetup"
         "ProductCode" = "8:{30A311E2-F319-4451-935A-BDEF9EE1886B}"
-        "PackageCode" = "8:{3C7E0495-FA9B-418E-9158-6D69E29DC243}"
+        "PackageCode" = "8:{D14A188D-F059-45CE-B7D0-FE7ED66D52CC}"
         "UpgradeCode" = "8:{311C3DBB-D921-423A-BE01-118135409EFB}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
