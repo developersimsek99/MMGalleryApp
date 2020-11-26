@@ -21,25 +21,25 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0D6746A8E34B6EF1898D0CF15AB52210"
-        "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0D6746A8E34B6EF1898D0CF15AB52210"
-        "OwnerKey" = "8:_44975A430208E5FFA3179E7E7497A4A8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_44975A430208E5FFA3179E7E7497A4A8"
-        "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6A51CC06BBAE13F9CC5271D674237AA2"
+        "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8627BB89535547AE5566A10063961E6A"
+        "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8627BB89535547AE5566A10063961E6A"
+        "OwnerKey" = "8:_CEB4B5749096AFB801FA10CBB3B50730"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CEB4B5749096AFB801FA10CBB3B50730"
         "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -52,25 +52,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6A51CC06BBAE13F9CC5271D674237AA2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_44975A430208E5FFA3179E7E7497A4A8"
+        "OwnerKey" = "8:_CEB4B5749096AFB801FA10CBB3B50730"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0D6746A8E34B6EF1898D0CF15AB52210"
+        "OwnerKey" = "8:_8627BB89535547AE5566A10063961E6A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6A51CC06BBAE13F9CC5271D674237AA2"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -91,6 +91,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -107,6 +115,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -212,14 +228,45 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0D6746A8E34B6EF1898D0CF15AB52210"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6A51CC06BBAE13F9CC5271D674237AA2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_6A51CC06BBAE13F9CC5271D674237AA2"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BE24960ED6EF410CA689EF177C0CD13D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8627BB89535547AE5566A10063961E6A"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0D6746A8E34B6EF1898D0CF15AB52210"
+                    "_8627BB89535547AE5566A10063961E6A"
                     {
                     "Name" = "8:EntityFramework.dll"
                     "Attributes" = "3:512"
@@ -243,51 +290,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_44975A430208E5FFA3179E7E7497A4A8"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CEB4B5749096AFB801FA10CBB3B50730"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_44975A430208E5FFA3179E7E7497A4A8"
+                    "_CEB4B5749096AFB801FA10CBB3B50730"
                     {
                     "Name" = "8:EntityFramework.SqlServer.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:EntityFramework.SqlServer.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BE24960ED6EF410CA689EF177C0CD13D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6A51CC06BBAE13F9CC5271D674237AA2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_6A51CC06BBAE13F9CC5271D674237AA2"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BE24960ED6EF410CA689EF177C0CD13D"
@@ -361,15 +377,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MMGallerySetup"
-        "ProductCode" = "8:{30A311E2-F319-4451-935A-BDEF9EE1886B}"
-        "PackageCode" = "8:{D14A188D-F059-45CE-B7D0-FE7ED66D52CC}"
+        "ProductCode" = "8:{8EB92767-6857-403D-A7DC-F1D3C4CE0DA6}"
+        "PackageCode" = "8:{7EDA4BD4-6C42-4F53-8B34-DD7429CAD8D4}"
         "UpgradeCode" = "8:{311C3DBB-D921-423A-BE01-118135409EFB}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:Casper"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
