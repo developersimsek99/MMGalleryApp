@@ -1,2 +1,2 @@
-Data Source=DESKTOP-C4FIS0N\SQLEXPRESS; initial catalog=DbGaleriMA; integrated security=true;
-Data Source=(localdb)\mssqllocaldb; initial catalog=DbGaleriMS; integrated security=true;
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Murat\Source\Repos\developersimsek99\OrtakProje\MSMA1\MSMA1\App_Data\Database1.mdf;Integrated Security=True
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DEVELOPER\Source\Repos\OrtakProje\MSMA1\MSMA1\App_Data\Database1.mdf;Integrated Security=True

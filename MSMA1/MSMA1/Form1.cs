@@ -38,6 +38,12 @@ namespace MSMA1
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
+            if (tbxFiyat.Text == Convert.ToString(tbxFiyat.Text))
+            {
+                tbxFiyat.Clear();
+                MessageBox.Show("Yanlış veri tipi girildi!");
+
+            }
             ArabaDalCls arabaDalCls = new ArabaDalCls();
             arabaDalCls.Ekle(new ArabaCls {
                 Marka = tbxMarka.Text,
@@ -45,10 +51,12 @@ namespace MSMA1
                 Fiyat = Convert.ToDecimal(tbxFiyat.Text),
                 Aciklama = tbxAciklama.Text
             });
+            
             if (String.IsNullOrEmpty(tbxMarka.Text) || String.IsNullOrEmpty(tbxModel.Text) || String.IsNullOrEmpty(tbxFiyat.Text) || String.IsNullOrEmpty(tbxAciklama.Text))
             {
                 MessageBox.Show("Eksik veri girdiniz! Alanların tümünü doldurmak zorunludur!");
             }
+            
             else
             {
                 arabaDgw.DataSource = arabaDalCls.Listeleme();
