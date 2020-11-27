@@ -21,6 +21,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_13597694F3B046C89CB110244807BDD4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3A7BF5575D294264A8D2B421B0556312"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6A51CC06BBAE13F9CC5271D674237AA2"
         "OwnerKey" = "8:_DB0C2AC3EC4447D986385F78327C89CC"
         "MsmSig" = "8:_UNDEFINED"
@@ -98,6 +110,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -122,6 +142,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -214,6 +242,46 @@
             "TargetName" = "8:MMGaleryIcon.ico"
             "Tag" = "8:"
             "Folder" = "8:_BE24960ED6EF410CA689EF177C0CD13D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_13597694F3B046C89CB110244807BDD4"
+            {
+            "SourcePath" = "8:..\\MSMA1\\App_Data\\Database1_log.ldf"
+            "TargetName" = "8:Database1_log.ldf"
+            "Tag" = "8:"
+            "Folder" = "8:_1FBB7F55B7BC4A78BE038263F007FA5D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3A7BF5575D294264A8D2B421B0556312"
+            {
+            "SourcePath" = "8:..\\MSMA1\\App_Data\\Database1.mdf"
+            "TargetName" = "8:Database1.mdf"
+            "Tag" = "8:"
+            "Folder" = "8:_1FBB7F55B7BC4A78BE038263F007FA5D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -359,6 +427,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_1FBB7F55B7BC4A78BE038263F007FA5D"
+                    {
+                    "Name" = "8:App_Data"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_F3842491E6664B6F8452BE6CE7D836B5"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -377,15 +456,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MMGallerySetup"
-        "ProductCode" = "8:{8EB92767-6857-403D-A7DC-F1D3C4CE0DA6}"
-        "PackageCode" = "8:{7EDA4BD4-6C42-4F53-8B34-DD7429CAD8D4}"
+        "ProductCode" = "8:{15D34087-B35A-4E00-A24B-07720D8A992A}"
+        "PackageCode" = "8:{EEB7F6F6-E56F-41E4-BF64-9990A1072B3B}"
         "UpgradeCode" = "8:{311C3DBB-D921-423A-BE01-118135409EFB}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.4"
         "Manufacturer" = "8:Casper"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

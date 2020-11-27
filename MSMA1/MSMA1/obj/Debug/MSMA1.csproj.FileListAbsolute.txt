@@ -19,7 +19,6 @@ C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\E
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.xml
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csprojAssemblyReference.cache
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Form1.resources
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.Properties.Resources.resources
 C:\Users\Murat\source\repos\developersimsek99\OrtakProje\MSMA1\MSMA1\obj\Debug\MSMA1.csproj.GenerateResource.cache

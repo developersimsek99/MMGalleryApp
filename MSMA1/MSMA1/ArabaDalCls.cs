@@ -11,17 +11,9 @@ namespace MSMA1
 {
     class ArabaDalCls
     {
-        string linkAdressi;
         private SqlConnection Baglanti()
         {
-            StreamReader streamReader = new StreamReader(@"C:\Users\linkAddress.txt");
-            string satir = streamReader.ReadLine();
-            while (satir != null)
-            {
-                linkAdressi = satir;
-                satir = streamReader.ReadLine();
-            }
-            SqlConnection connection = new SqlConnection(linkAdressi);
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Program Files (x86)\MMGallery\MMGallerySetup\App_Data\Database1.mdf;Integrated Security=True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
