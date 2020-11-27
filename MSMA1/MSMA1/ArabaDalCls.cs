@@ -13,7 +13,7 @@ namespace MSMA1
     {
         private SqlConnection Baglanti()
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Program Files (x86)\MMGallery\MMGallerySetup\App_Data\Database1.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Program Files\MMGallery\MMGallerySetup\App_Data\Database1.mdf;Integrated Security=True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
